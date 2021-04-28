@@ -1,22 +1,21 @@
 # frozen_string_literal: true
 
 def bin_search(array, item)
-  return p 'none found' if array.length < 3 && item != array[0] && item != array[1]
+  return nil if array.length.zero?
 
-  min = array[0]
-  max = array[array.length - 1]
-  mid = (min + max) / 2
-  if item == mid
-    p "#{item} found"
+  mid = array.length / 2
+  if array[mid] == item
     mid
-  elsif item < mid
-    bin_search(array[0..(array.index(mid) - 1)], item)
-  elsif item > mid
-    bin_search(array[(array.index(mid) + 1)..array.length - 1], item)
+  elsif item < array[mid]
+    bin_search(array[0..(mid - 1)], item)
+  elsif item > array[mid]
+    search = bin_search(array[(mid + 1)..(array.length - 1)], item)
+    search.nil? ? nil : (mid + 1 + search)
   end
 end
 
-bin_search([1, 2, 3, 4, 5, 6, 7, 8, 9], 4)
-bin_search([1, 2, 3], 4)
-bin_search([1, 2], 1)
-bin_search([], 2)
+p bin_search([1, 2, 3, 4, 5, 6, 7, 8, 9], 4)
+p bin_search([3, 46, 4, 547, 325, 45, 77, 89], 325)
+p bin_search([1, 2, 3], 4)
+p bin_search([1, 2], 1)
+p bin_search([], 2)
