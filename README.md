@@ -9,3 +9,5 @@ its elements.
 ## Max of array
 Write a method **#max** which takes a random array of numbers and returns the 
 largest element.
+## Quick sort
+Write a method **#quick_sort** which takes a random array of numbers and returns this array sorted from the least number to the greatest.
