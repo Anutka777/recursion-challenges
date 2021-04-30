@@ -9,5 +9,7 @@ its elements.
 ## Max of array
 Write a method **#max** which takes a random array of numbers and returns the 
 largest element.
+## Binary search
+Write a method **#bin_search**, which takes an array of random numbers and a single integer. It should return either index of that integer in the array or nil.
 ## Quick sort
 Write a method **#quick_sort** which takes a random array of numbers and returns this array sorted from the least number to the greatest.
