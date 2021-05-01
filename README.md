@@ -13,3 +13,6 @@ largest element.
 Write a method **#bin_search**, which takes an array of random numbers and a single integer. It should return either index of that integer in the array or nil.
 ## Quick sort
 Write a method **#quick_sort** which takes a random array of numbers and returns this array sorted from the least number to the greatest.
+
+## Sum of multiples of 3 and 5
+Write a method **sum_of_mult** which takes an array of random integers and returns the sum of all elements that are multiples of 3 or 5.
